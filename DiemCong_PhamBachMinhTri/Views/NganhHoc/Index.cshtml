@@ -1,0 +1,27 @@
+﻿@model IEnumerable<DiemCong_PhamBachMinhTri.Models.NganhHoc>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table border="1px">
+    <tr>
+        <th>Mã nganh</th>
+        <th>Tên nganh </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MaNganh</td>
+            <td>@item.TenNganh</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaNganh }) |
+                @Html.ActionLink("Detail", "Detail", new { id = item.MaNganh }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaNganh })
+            </td>
+        </tr>
+    }
+</table>

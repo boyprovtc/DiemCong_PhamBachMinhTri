@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="MyDataClasses">
+  <DataContextMoniker Name="/MyDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5225bdc-4a34-476a-8beb-696727cc40fa" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/MyDataClassesDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0427c5a9-c53b-43ee-9065-1de3f5dad0fb" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8372ab11-4ab3-41d3-b7fe-8687d6d21e56" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/MyDataClassesDataContext/NganhHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="994b7839-8bb9-4d34-aed8-62c5c0ad2074" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89536be0-258b-485b-8b42-5f83f42a6b75" absoluteBounds="6.25, 4.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MyDataClassesDataContext/HocPhan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="228438b5-2622-4a23-b589-ade2e7de1d4d" absoluteBounds="6.265, 4.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0198daf-fa59-48c2-8bc0-e19eec8899c9" absoluteBounds="6.25, 1.25, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/MyDataClassesDataContext/DangKy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="139f3525-62a4-479c-9ee4-6623470eecff" absoluteBounds="6.265, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b756dea-672b-4c39-a56a-0defe3aa8293" absoluteBounds="9, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/MyDataClassesDataContext/ChiTietDangKy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07134a64-eb6a-48e5-9835-65a30da1abdb" absoluteBounds="9.015, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataClassesDataContext/NganhHoc/NganhHoc_SinhVien" />
+      <nodes>
+        <classShapeMoniker Id="8372ab11-4ab3-41d3-b7fe-8687d6d21e56" />
+        <classShapeMoniker Id="a5225bdc-4a34-476a-8beb-696727cc40fa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.94314697265625); (6.25 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataClassesDataContext/SinhVien/SinhVien_DangKy" />
+      <nodes>
+        <classShapeMoniker Id="a5225bdc-4a34-476a-8beb-696727cc40fa" />
+        <classShapeMoniker Id="a0198daf-fa59-48c2-8bc0-e19eec8899c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.84699625651042); (9 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataClassesDataContext/DangKy/DangKy_ChiTietDangKy" />
+      <nodes>
+        <classShapeMoniker Id="a0198daf-fa59-48c2-8bc0-e19eec8899c9" />
+        <classShapeMoniker Id="1b756dea-672b-4c39-a56a-0defe3aa8293" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.94314697265625); (10 : 4.94314697265625); (10 : 2.44399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataClassesDataContext/HocPhan/HocPhan_ChiTietDangKy" />
+      <nodes>
+        <classShapeMoniker Id="89536be0-258b-485b-8b42-5f83f42a6b75" />
+        <classShapeMoniker Id="1b756dea-672b-4c39-a56a-0defe3aa8293" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
